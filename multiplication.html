@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+    <style>
+        body {
+            background-color: #e0f7fa; /* A lighter, more pleasant blue */
+            font-family: "Times New Roman", Times, serif;
+            display: flex; /* Centers the table on the page */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        table {
+            border: 3px solid #00796b; /* Thicker, dark cyan border for the whole table */
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+            background-color: #ffffff; /* White background for the table content */
+        }
+        
+        th, td {
+            border: 1px solid #00796b; /* Dark cyan borders for cells */
+            text-align: center;
+            padding: 12px; /* Increased padding for more space */
+        }
+        
+        th {
+            background-color: #4db6ac; /* A light teal for header cells */
+            color: white; /* White text for contrast */
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f0f0f0; /* Zebra stripes for even rows */
+        }
+        
+        /* Hover effect for a more interactive feel */
+        tr:hover {
+            background-color: #b2dfdb; /* Lighter teal on hover */
+            cursor: pointer;
+        }
+
+        h2 {
+            color: #004d40; /* Darker green for the heading */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Multiplication Table (1-5)</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>X</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>2</td>
+                <td>4</td>
+                <td>6</td>
+                <td>8</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>3</td>
+                <td>6</td>
+                <td>9</td>
+                <td>12</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>4</td>
+                <td>8</td>
+                <td>12</td>
+                <td>16</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>5</td>
+                <td>10</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
